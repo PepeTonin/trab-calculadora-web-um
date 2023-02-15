@@ -1,0 +1,114 @@
+body {
+    box-sizing: border-box;
+    width: 500px;
+    margin: 4% auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+}
+
+.calculadora {
+    padding: 20px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+    width: fit-content;
+}
+
+.display {
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    height: 60px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    font-size: 2.5rem;
+    overflow-x: auto;
+    transition: all .2s ease-in-out;
+
+    width: auto;
+}
+
+.linha {
+    width: fit-content;
+    margin: 0;
+}
+
+.numero {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    width: 75px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0px 10px 0;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.operador {
+    display: inline-block;
+    border: 1px solid #bbb;
+    border-radius: 1px;
+    width: 75px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0px 10px 0;
+    cursor: pointer;
+    background-color: #ddd;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+#potencia {
+    font-size: 1.4rem;
+}
+
+#igual {
+    display: inline-block;
+    border: 1px solid #3079ED;
+    border-radius: 1px;
+    width: 75px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0px 10px 0;
+    cursor: pointer;
+    background-color: #4d90fe;
+    color: #FFF;
+    transition: all .2s ease-in-out;
+}
+
+#apagarUltimo {
+    display: inline-block;
+    border: 1px solid #bbb;
+    border-radius: 1px;
+    width: 75px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0px 10px 0;
+    cursor: pointer;
+    background-color: #ddd;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.display:hover {
+    border: 1px solid #bbb;
+    -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.linha div:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #bbb;
+}
+
+div#igual:hover {
+    background-color: #307CF9;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #1857BB;
+}
+
+div#igual:active,
+.linha div:active {
+    font-weight: bold;
+}
